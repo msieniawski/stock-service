@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option java_package = "com.stockservice.proto";
+option java_outer_classname = "ExchangeRatesProto";
+
+message ExchangeRates {
+    string stockExchangeName = 1;
+    string currency = 2;
+    repeated Rate rates = 3;
+}
+
+message Rate {
+    string currency = 1;
+    string price = 2;
+}
+

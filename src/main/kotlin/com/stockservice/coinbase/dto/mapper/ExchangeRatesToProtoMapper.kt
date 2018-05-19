@@ -1,6 +1,5 @@
 package com.stockservice.coinbase.dto.mapper
 
-import com.stockservice.Mapper
 import com.stockservice.coinbase.dto.exchangerates.ExchangeRatesDto
 import com.stockservice.proto.ExchangeRatesProto.ExchangeRates
 import com.stockservice.proto.ExchangeRatesProto.Rate

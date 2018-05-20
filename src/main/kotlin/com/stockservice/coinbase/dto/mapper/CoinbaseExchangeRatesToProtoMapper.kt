@@ -1,5 +1,6 @@
 package com.stockservice.coinbase.dto.mapper
 
+import com.stockservice.Mapper
 import com.stockservice.coinbase.dto.exchangerates.ExchangeRatesDto
 import com.stockservice.proto.ExchangeRatesProto.ExchangeRates
 import com.stockservice.proto.ExchangeRatesProto.Rate
@@ -7,7 +8,7 @@ import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Component
 
 @Component
-class ExchangeRatesToProtoMapper : Mapper<ExchangeRatesDto, ExchangeRates> {
+class CoinbaseExchangeRatesToProtoMapper : Mapper<ExchangeRatesDto, ExchangeRates> {
 
     @Value("\${coinbase.name}")
     private lateinit var stockExchangeName: String

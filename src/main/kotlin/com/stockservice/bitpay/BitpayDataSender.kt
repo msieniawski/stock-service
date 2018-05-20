@@ -1,22 +1,22 @@
-package com.stockservice.coinbase
+package com.stockservice.bitpay
 
-import com.stockservice.coinbase.dto.mapper.CoinbaseExchangeRatesToProtoMapper
+import com.stockservice.bitpay.dto.mapper.BitpayExchangeRatesToProtoMapper
 import com.stockservice.utils.logger
 import org.springframework.amqp.rabbit.core.RabbitTemplate
 import org.springframework.scheduling.annotation.Scheduled
 import org.springframework.stereotype.Component
 
 @Component
-class CoinbaseDataSender(
-        private val coinbaseDataRequester: CoinbaseDataRequester,
+class BitpayDataSender(
+        private val bitpayDataRequester: BitpayDataRequester,
         private val rabbitTemplate: RabbitTemplate,
-        private val coinbaseExchangeRatesToProtoMapper: CoinbaseExchangeRatesToProtoMapper
+        private val bitpayExchangeRatesToProtoMapper: BitpayExchangeRatesToProtoMapper
 ) {
     private val log by logger()
 
     @Scheduled(fixedDelay = 3_000)
     fun send() {
-        val exchangeRates = coinbaseExchangeRatesToProtoMapper.map(coinbaseDataRequester.getExchangeRates("BTC"))
+        val exchangeRates = bitpayExchangeRatesToProtoMapper.map(bitpayDataRequester.getExchangeRates("BTC"))
         rabbitTemplate.convertAndSend(exchangeRates)
         log.info("Message sent to '${rabbitTemplate.routingKey}'")
     }

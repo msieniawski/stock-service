@@ -1,4 +1,4 @@
-package com.stockservice.coinbase.dto.mapper
+package com.stockservice
 
 interface Mapper<in From, out To> {
 

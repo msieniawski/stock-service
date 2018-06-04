@@ -1,6 +1,5 @@
 syntax = "proto3";
 
-option java_package = "com.stockservice.proto";
 option java_outer_classname = "ExchangeRatesProto";
 
 message ExchangeRates {

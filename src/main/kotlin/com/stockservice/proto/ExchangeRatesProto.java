@@ -41,12 +41,12 @@ public final class ExchangeRatesProto {
     /**
      * <code>repeated .Rate rates = 3;</code>
      */
-    java.util.List<com.stockservice.proto.ExchangeRatesProto.Rate> 
+    java.util.List<ExchangeRatesProto.Rate> 
         getRatesList();
     /**
      * <code>repeated .Rate rates = 3;</code>
      */
-    com.stockservice.proto.ExchangeRatesProto.Rate getRates(int index);
+    ExchangeRatesProto.Rate getRates(int index);
     /**
      * <code>repeated .Rate rates = 3;</code>
      */
@@ -54,12 +54,12 @@ public final class ExchangeRatesProto {
     /**
      * <code>repeated .Rate rates = 3;</code>
      */
-    java.util.List<? extends com.stockservice.proto.ExchangeRatesProto.RateOrBuilder> 
+    java.util.List<? extends ExchangeRatesProto.RateOrBuilder> 
         getRatesOrBuilderList();
     /**
      * <code>repeated .Rate rates = 3;</code>
      */
-    com.stockservice.proto.ExchangeRatesProto.RateOrBuilder getRatesOrBuilder(
+    ExchangeRatesProto.RateOrBuilder getRatesOrBuilder(
         int index);
   }
   /**
@@ -125,11 +125,11 @@ public final class ExchangeRatesProto {
             }
             case 26: {
               if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
-                rates_ = new java.util.ArrayList<com.stockservice.proto.ExchangeRatesProto.Rate>();
+                rates_ = new java.util.ArrayList<ExchangeRatesProto.Rate>();
                 mutable_bitField0_ |= 0x00000004;
               }
               rates_.add(
-                  input.readMessage(com.stockservice.proto.ExchangeRatesProto.Rate.parser(), extensionRegistry));
+                  input.readMessage(ExchangeRatesProto.Rate.parser(), extensionRegistry));
               break;
             }
           }
@@ -149,14 +149,14 @@ public final class ExchangeRatesProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.stockservice.proto.ExchangeRatesProto.internal_static_ExchangeRates_descriptor;
+      return ExchangeRatesProto.internal_static_ExchangeRates_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.stockservice.proto.ExchangeRatesProto.internal_static_ExchangeRates_fieldAccessorTable
+      return ExchangeRatesProto.internal_static_ExchangeRates_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.stockservice.proto.ExchangeRatesProto.ExchangeRates.class, com.stockservice.proto.ExchangeRatesProto.ExchangeRates.Builder.class);
+              ExchangeRatesProto.ExchangeRates.class, ExchangeRatesProto.ExchangeRates.Builder.class);
     }
 
     private int bitField0_;
@@ -229,17 +229,17 @@ public final class ExchangeRatesProto {
     }
 
     public static final int RATES_FIELD_NUMBER = 3;
-    private java.util.List<com.stockservice.proto.ExchangeRatesProto.Rate> rates_;
+    private java.util.List<ExchangeRatesProto.Rate> rates_;
     /**
      * <code>repeated .Rate rates = 3;</code>
      */
-    public java.util.List<com.stockservice.proto.ExchangeRatesProto.Rate> getRatesList() {
+    public java.util.List<ExchangeRatesProto.Rate> getRatesList() {
       return rates_;
     }
     /**
      * <code>repeated .Rate rates = 3;</code>
      */
-    public java.util.List<? extends com.stockservice.proto.ExchangeRatesProto.RateOrBuilder> 
+    public java.util.List<? extends ExchangeRatesProto.RateOrBuilder> 
         getRatesOrBuilderList() {
       return rates_;
     }
@@ -252,13 +252,13 @@ public final class ExchangeRatesProto {
     /**
      * <code>repeated .Rate rates = 3;</code>
      */
-    public com.stockservice.proto.ExchangeRatesProto.Rate getRates(int index) {
+    public ExchangeRatesProto.Rate getRates(int index) {
       return rates_.get(index);
     }
     /**
      * <code>repeated .Rate rates = 3;</code>
      */
-    public com.stockservice.proto.ExchangeRatesProto.RateOrBuilder getRatesOrBuilder(
+    public ExchangeRatesProto.RateOrBuilder getRatesOrBuilder(
         int index) {
       return rates_.get(index);
     }
@@ -312,10 +312,10 @@ public final class ExchangeRatesProto {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.stockservice.proto.ExchangeRatesProto.ExchangeRates)) {
+      if (!(obj instanceof ExchangeRatesProto.ExchangeRates)) {
         return super.equals(obj);
       }
-      com.stockservice.proto.ExchangeRatesProto.ExchangeRates other = (com.stockservice.proto.ExchangeRatesProto.ExchangeRates) obj;
+      ExchangeRatesProto.ExchangeRates other = (ExchangeRatesProto.ExchangeRates) obj;
 
       boolean result = true;
       result = result && getStockExchangeName()
@@ -348,69 +348,69 @@ public final class ExchangeRatesProto {
       return hash;
     }
 
-    public static com.stockservice.proto.ExchangeRatesProto.ExchangeRates parseFrom(
+    public static ExchangeRatesProto.ExchangeRates parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.stockservice.proto.ExchangeRatesProto.ExchangeRates parseFrom(
+    public static ExchangeRatesProto.ExchangeRates parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.stockservice.proto.ExchangeRatesProto.ExchangeRates parseFrom(
+    public static ExchangeRatesProto.ExchangeRates parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.stockservice.proto.ExchangeRatesProto.ExchangeRates parseFrom(
+    public static ExchangeRatesProto.ExchangeRates parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.stockservice.proto.ExchangeRatesProto.ExchangeRates parseFrom(byte[] data)
+    public static ExchangeRatesProto.ExchangeRates parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.stockservice.proto.ExchangeRatesProto.ExchangeRates parseFrom(
+    public static ExchangeRatesProto.ExchangeRates parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.stockservice.proto.ExchangeRatesProto.ExchangeRates parseFrom(java.io.InputStream input)
+    public static ExchangeRatesProto.ExchangeRates parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.stockservice.proto.ExchangeRatesProto.ExchangeRates parseFrom(
+    public static ExchangeRatesProto.ExchangeRates parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.stockservice.proto.ExchangeRatesProto.ExchangeRates parseDelimitedFrom(java.io.InputStream input)
+    public static ExchangeRatesProto.ExchangeRates parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.stockservice.proto.ExchangeRatesProto.ExchangeRates parseDelimitedFrom(
+    public static ExchangeRatesProto.ExchangeRates parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.stockservice.proto.ExchangeRatesProto.ExchangeRates parseFrom(
+    public static ExchangeRatesProto.ExchangeRates parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.stockservice.proto.ExchangeRatesProto.ExchangeRates parseFrom(
+    public static ExchangeRatesProto.ExchangeRates parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -422,7 +422,7 @@ public final class ExchangeRatesProto {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.stockservice.proto.ExchangeRatesProto.ExchangeRates prototype) {
+    public static Builder newBuilder(ExchangeRatesProto.ExchangeRates prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -442,20 +442,20 @@ public final class ExchangeRatesProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:ExchangeRates)
-        com.stockservice.proto.ExchangeRatesProto.ExchangeRatesOrBuilder {
+        ExchangeRatesProto.ExchangeRatesOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.stockservice.proto.ExchangeRatesProto.internal_static_ExchangeRates_descriptor;
+        return ExchangeRatesProto.internal_static_ExchangeRates_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.stockservice.proto.ExchangeRatesProto.internal_static_ExchangeRates_fieldAccessorTable
+        return ExchangeRatesProto.internal_static_ExchangeRates_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.stockservice.proto.ExchangeRatesProto.ExchangeRates.class, com.stockservice.proto.ExchangeRatesProto.ExchangeRates.Builder.class);
+                ExchangeRatesProto.ExchangeRates.class, ExchangeRatesProto.ExchangeRates.Builder.class);
       }
 
-      // Construct using com.stockservice.proto.ExchangeRatesProto.ExchangeRates.newBuilder()
+      // Construct using ExchangeRatesProto.ExchangeRates.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -488,23 +488,23 @@ public final class ExchangeRatesProto {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.stockservice.proto.ExchangeRatesProto.internal_static_ExchangeRates_descriptor;
+        return ExchangeRatesProto.internal_static_ExchangeRates_descriptor;
       }
 
-      public com.stockservice.proto.ExchangeRatesProto.ExchangeRates getDefaultInstanceForType() {
-        return com.stockservice.proto.ExchangeRatesProto.ExchangeRates.getDefaultInstance();
+      public ExchangeRatesProto.ExchangeRates getDefaultInstanceForType() {
+        return ExchangeRatesProto.ExchangeRates.getDefaultInstance();
       }
 
-      public com.stockservice.proto.ExchangeRatesProto.ExchangeRates build() {
-        com.stockservice.proto.ExchangeRatesProto.ExchangeRates result = buildPartial();
+      public ExchangeRatesProto.ExchangeRates build() {
+        ExchangeRatesProto.ExchangeRates result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.stockservice.proto.ExchangeRatesProto.ExchangeRates buildPartial() {
-        com.stockservice.proto.ExchangeRatesProto.ExchangeRates result = new com.stockservice.proto.ExchangeRatesProto.ExchangeRates(this);
+      public ExchangeRatesProto.ExchangeRates buildPartial() {
+        ExchangeRatesProto.ExchangeRates result = new ExchangeRatesProto.ExchangeRates(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         result.stockExchangeName_ = stockExchangeName_;
@@ -550,16 +550,16 @@ public final class ExchangeRatesProto {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.stockservice.proto.ExchangeRatesProto.ExchangeRates) {
-          return mergeFrom((com.stockservice.proto.ExchangeRatesProto.ExchangeRates)other);
+        if (other instanceof ExchangeRatesProto.ExchangeRates) {
+          return mergeFrom((ExchangeRatesProto.ExchangeRates)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.stockservice.proto.ExchangeRatesProto.ExchangeRates other) {
-        if (other == com.stockservice.proto.ExchangeRatesProto.ExchangeRates.getDefaultInstance()) return this;
+      public Builder mergeFrom(ExchangeRatesProto.ExchangeRates other) {
+        if (other == ExchangeRatesProto.ExchangeRates.getDefaultInstance()) return this;
         if (!other.getStockExchangeName().isEmpty()) {
           stockExchangeName_ = other.stockExchangeName_;
           onChanged();
@@ -607,11 +607,11 @@ public final class ExchangeRatesProto {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.stockservice.proto.ExchangeRatesProto.ExchangeRates parsedMessage = null;
+        ExchangeRatesProto.ExchangeRates parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.stockservice.proto.ExchangeRatesProto.ExchangeRates) e.getUnfinishedMessage();
+          parsedMessage = (ExchangeRatesProto.ExchangeRates) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -760,22 +760,22 @@ public final class ExchangeRatesProto {
         return this;
       }
 
-      private java.util.List<com.stockservice.proto.ExchangeRatesProto.Rate> rates_ =
+      private java.util.List<ExchangeRatesProto.Rate> rates_ =
         java.util.Collections.emptyList();
       private void ensureRatesIsMutable() {
         if (!((bitField0_ & 0x00000004) == 0x00000004)) {
-          rates_ = new java.util.ArrayList<com.stockservice.proto.ExchangeRatesProto.Rate>(rates_);
+          rates_ = new java.util.ArrayList<ExchangeRatesProto.Rate>(rates_);
           bitField0_ |= 0x00000004;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.stockservice.proto.ExchangeRatesProto.Rate, com.stockservice.proto.ExchangeRatesProto.Rate.Builder, com.stockservice.proto.ExchangeRatesProto.RateOrBuilder> ratesBuilder_;
+          ExchangeRatesProto.Rate, ExchangeRatesProto.Rate.Builder, ExchangeRatesProto.RateOrBuilder> ratesBuilder_;
 
       /**
        * <code>repeated .Rate rates = 3;</code>
        */
-      public java.util.List<com.stockservice.proto.ExchangeRatesProto.Rate> getRatesList() {
+      public java.util.List<ExchangeRatesProto.Rate> getRatesList() {
         if (ratesBuilder_ == null) {
           return java.util.Collections.unmodifiableList(rates_);
         } else {
@@ -795,7 +795,7 @@ public final class ExchangeRatesProto {
       /**
        * <code>repeated .Rate rates = 3;</code>
        */
-      public com.stockservice.proto.ExchangeRatesProto.Rate getRates(int index) {
+      public ExchangeRatesProto.Rate getRates(int index) {
         if (ratesBuilder_ == null) {
           return rates_.get(index);
         } else {
@@ -806,7 +806,7 @@ public final class ExchangeRatesProto {
        * <code>repeated .Rate rates = 3;</code>
        */
       public Builder setRates(
-          int index, com.stockservice.proto.ExchangeRatesProto.Rate value) {
+          int index, ExchangeRatesProto.Rate value) {
         if (ratesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -823,7 +823,7 @@ public final class ExchangeRatesProto {
        * <code>repeated .Rate rates = 3;</code>
        */
       public Builder setRates(
-          int index, com.stockservice.proto.ExchangeRatesProto.Rate.Builder builderForValue) {
+          int index, ExchangeRatesProto.Rate.Builder builderForValue) {
         if (ratesBuilder_ == null) {
           ensureRatesIsMutable();
           rates_.set(index, builderForValue.build());
@@ -836,7 +836,7 @@ public final class ExchangeRatesProto {
       /**
        * <code>repeated .Rate rates = 3;</code>
        */
-      public Builder addRates(com.stockservice.proto.ExchangeRatesProto.Rate value) {
+      public Builder addRates(ExchangeRatesProto.Rate value) {
         if (ratesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -853,7 +853,7 @@ public final class ExchangeRatesProto {
        * <code>repeated .Rate rates = 3;</code>
        */
       public Builder addRates(
-          int index, com.stockservice.proto.ExchangeRatesProto.Rate value) {
+          int index, ExchangeRatesProto.Rate value) {
         if (ratesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -870,7 +870,7 @@ public final class ExchangeRatesProto {
        * <code>repeated .Rate rates = 3;</code>
        */
       public Builder addRates(
-          com.stockservice.proto.ExchangeRatesProto.Rate.Builder builderForValue) {
+          ExchangeRatesProto.Rate.Builder builderForValue) {
         if (ratesBuilder_ == null) {
           ensureRatesIsMutable();
           rates_.add(builderForValue.build());
@@ -884,7 +884,7 @@ public final class ExchangeRatesProto {
        * <code>repeated .Rate rates = 3;</code>
        */
       public Builder addRates(
-          int index, com.stockservice.proto.ExchangeRatesProto.Rate.Builder builderForValue) {
+          int index, ExchangeRatesProto.Rate.Builder builderForValue) {
         if (ratesBuilder_ == null) {
           ensureRatesIsMutable();
           rates_.add(index, builderForValue.build());
@@ -898,7 +898,7 @@ public final class ExchangeRatesProto {
        * <code>repeated .Rate rates = 3;</code>
        */
       public Builder addAllRates(
-          java.lang.Iterable<? extends com.stockservice.proto.ExchangeRatesProto.Rate> values) {
+          java.lang.Iterable<? extends ExchangeRatesProto.Rate> values) {
         if (ratesBuilder_ == null) {
           ensureRatesIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -938,14 +938,14 @@ public final class ExchangeRatesProto {
       /**
        * <code>repeated .Rate rates = 3;</code>
        */
-      public com.stockservice.proto.ExchangeRatesProto.Rate.Builder getRatesBuilder(
+      public ExchangeRatesProto.Rate.Builder getRatesBuilder(
           int index) {
         return getRatesFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .Rate rates = 3;</code>
        */
-      public com.stockservice.proto.ExchangeRatesProto.RateOrBuilder getRatesOrBuilder(
+      public ExchangeRatesProto.RateOrBuilder getRatesOrBuilder(
           int index) {
         if (ratesBuilder_ == null) {
           return rates_.get(index);  } else {
@@ -955,7 +955,7 @@ public final class ExchangeRatesProto {
       /**
        * <code>repeated .Rate rates = 3;</code>
        */
-      public java.util.List<? extends com.stockservice.proto.ExchangeRatesProto.RateOrBuilder> 
+      public java.util.List<? extends ExchangeRatesProto.RateOrBuilder> 
            getRatesOrBuilderList() {
         if (ratesBuilder_ != null) {
           return ratesBuilder_.getMessageOrBuilderList();
@@ -966,31 +966,31 @@ public final class ExchangeRatesProto {
       /**
        * <code>repeated .Rate rates = 3;</code>
        */
-      public com.stockservice.proto.ExchangeRatesProto.Rate.Builder addRatesBuilder() {
+      public ExchangeRatesProto.Rate.Builder addRatesBuilder() {
         return getRatesFieldBuilder().addBuilder(
-            com.stockservice.proto.ExchangeRatesProto.Rate.getDefaultInstance());
+            ExchangeRatesProto.Rate.getDefaultInstance());
       }
       /**
        * <code>repeated .Rate rates = 3;</code>
        */
-      public com.stockservice.proto.ExchangeRatesProto.Rate.Builder addRatesBuilder(
+      public ExchangeRatesProto.Rate.Builder addRatesBuilder(
           int index) {
         return getRatesFieldBuilder().addBuilder(
-            index, com.stockservice.proto.ExchangeRatesProto.Rate.getDefaultInstance());
+            index, ExchangeRatesProto.Rate.getDefaultInstance());
       }
       /**
        * <code>repeated .Rate rates = 3;</code>
        */
-      public java.util.List<com.stockservice.proto.ExchangeRatesProto.Rate.Builder> 
+      public java.util.List<ExchangeRatesProto.Rate.Builder> 
            getRatesBuilderList() {
         return getRatesFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.stockservice.proto.ExchangeRatesProto.Rate, com.stockservice.proto.ExchangeRatesProto.Rate.Builder, com.stockservice.proto.ExchangeRatesProto.RateOrBuilder> 
+          ExchangeRatesProto.Rate, ExchangeRatesProto.Rate.Builder, ExchangeRatesProto.RateOrBuilder> 
           getRatesFieldBuilder() {
         if (ratesBuilder_ == null) {
           ratesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.stockservice.proto.ExchangeRatesProto.Rate, com.stockservice.proto.ExchangeRatesProto.Rate.Builder, com.stockservice.proto.ExchangeRatesProto.RateOrBuilder>(
+              ExchangeRatesProto.Rate, ExchangeRatesProto.Rate.Builder, ExchangeRatesProto.RateOrBuilder>(
                   rates_,
                   ((bitField0_ & 0x00000004) == 0x00000004),
                   getParentForChildren(),
@@ -1014,12 +1014,12 @@ public final class ExchangeRatesProto {
     }
 
     // @@protoc_insertion_point(class_scope:ExchangeRates)
-    private static final com.stockservice.proto.ExchangeRatesProto.ExchangeRates DEFAULT_INSTANCE;
+    private static final ExchangeRatesProto.ExchangeRates DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.stockservice.proto.ExchangeRatesProto.ExchangeRates();
+      DEFAULT_INSTANCE = new ExchangeRatesProto.ExchangeRates();
     }
 
-    public static com.stockservice.proto.ExchangeRatesProto.ExchangeRates getDefaultInstance() {
+    public static ExchangeRatesProto.ExchangeRates getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1042,7 +1042,7 @@ public final class ExchangeRatesProto {
       return PARSER;
     }
 
-    public com.stockservice.proto.ExchangeRatesProto.ExchangeRates getDefaultInstanceForType() {
+    public ExchangeRatesProto.ExchangeRates getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1146,14 +1146,14 @@ public final class ExchangeRatesProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.stockservice.proto.ExchangeRatesProto.internal_static_Rate_descriptor;
+      return ExchangeRatesProto.internal_static_Rate_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.stockservice.proto.ExchangeRatesProto.internal_static_Rate_fieldAccessorTable
+      return ExchangeRatesProto.internal_static_Rate_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.stockservice.proto.ExchangeRatesProto.Rate.class, com.stockservice.proto.ExchangeRatesProto.Rate.Builder.class);
+              ExchangeRatesProto.Rate.class, ExchangeRatesProto.Rate.Builder.class);
     }
 
     public static final int CURRENCY_FIELD_NUMBER = 1;
@@ -1266,10 +1266,10 @@ public final class ExchangeRatesProto {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.stockservice.proto.ExchangeRatesProto.Rate)) {
+      if (!(obj instanceof ExchangeRatesProto.Rate)) {
         return super.equals(obj);
       }
-      com.stockservice.proto.ExchangeRatesProto.Rate other = (com.stockservice.proto.ExchangeRatesProto.Rate) obj;
+      ExchangeRatesProto.Rate other = (ExchangeRatesProto.Rate) obj;
 
       boolean result = true;
       result = result && getCurrency()
@@ -1296,69 +1296,69 @@ public final class ExchangeRatesProto {
       return hash;
     }
 
-    public static com.stockservice.proto.ExchangeRatesProto.Rate parseFrom(
+    public static ExchangeRatesProto.Rate parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.stockservice.proto.ExchangeRatesProto.Rate parseFrom(
+    public static ExchangeRatesProto.Rate parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.stockservice.proto.ExchangeRatesProto.Rate parseFrom(
+    public static ExchangeRatesProto.Rate parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.stockservice.proto.ExchangeRatesProto.Rate parseFrom(
+    public static ExchangeRatesProto.Rate parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.stockservice.proto.ExchangeRatesProto.Rate parseFrom(byte[] data)
+    public static ExchangeRatesProto.Rate parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.stockservice.proto.ExchangeRatesProto.Rate parseFrom(
+    public static ExchangeRatesProto.Rate parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.stockservice.proto.ExchangeRatesProto.Rate parseFrom(java.io.InputStream input)
+    public static ExchangeRatesProto.Rate parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.stockservice.proto.ExchangeRatesProto.Rate parseFrom(
+    public static ExchangeRatesProto.Rate parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.stockservice.proto.ExchangeRatesProto.Rate parseDelimitedFrom(java.io.InputStream input)
+    public static ExchangeRatesProto.Rate parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.stockservice.proto.ExchangeRatesProto.Rate parseDelimitedFrom(
+    public static ExchangeRatesProto.Rate parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.stockservice.proto.ExchangeRatesProto.Rate parseFrom(
+    public static ExchangeRatesProto.Rate parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.stockservice.proto.ExchangeRatesProto.Rate parseFrom(
+    public static ExchangeRatesProto.Rate parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1370,7 +1370,7 @@ public final class ExchangeRatesProto {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.stockservice.proto.ExchangeRatesProto.Rate prototype) {
+    public static Builder newBuilder(ExchangeRatesProto.Rate prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -1390,20 +1390,20 @@ public final class ExchangeRatesProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Rate)
-        com.stockservice.proto.ExchangeRatesProto.RateOrBuilder {
+        ExchangeRatesProto.RateOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.stockservice.proto.ExchangeRatesProto.internal_static_Rate_descriptor;
+        return ExchangeRatesProto.internal_static_Rate_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.stockservice.proto.ExchangeRatesProto.internal_static_Rate_fieldAccessorTable
+        return ExchangeRatesProto.internal_static_Rate_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.stockservice.proto.ExchangeRatesProto.Rate.class, com.stockservice.proto.ExchangeRatesProto.Rate.Builder.class);
+                ExchangeRatesProto.Rate.class, ExchangeRatesProto.Rate.Builder.class);
       }
 
-      // Construct using com.stockservice.proto.ExchangeRatesProto.Rate.newBuilder()
+      // Construct using ExchangeRatesProto.Rate.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1429,23 +1429,23 @@ public final class ExchangeRatesProto {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.stockservice.proto.ExchangeRatesProto.internal_static_Rate_descriptor;
+        return ExchangeRatesProto.internal_static_Rate_descriptor;
       }
 
-      public com.stockservice.proto.ExchangeRatesProto.Rate getDefaultInstanceForType() {
-        return com.stockservice.proto.ExchangeRatesProto.Rate.getDefaultInstance();
+      public ExchangeRatesProto.Rate getDefaultInstanceForType() {
+        return ExchangeRatesProto.Rate.getDefaultInstance();
       }
 
-      public com.stockservice.proto.ExchangeRatesProto.Rate build() {
-        com.stockservice.proto.ExchangeRatesProto.Rate result = buildPartial();
+      public ExchangeRatesProto.Rate build() {
+        ExchangeRatesProto.Rate result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.stockservice.proto.ExchangeRatesProto.Rate buildPartial() {
-        com.stockservice.proto.ExchangeRatesProto.Rate result = new com.stockservice.proto.ExchangeRatesProto.Rate(this);
+      public ExchangeRatesProto.Rate buildPartial() {
+        ExchangeRatesProto.Rate result = new ExchangeRatesProto.Rate(this);
         result.currency_ = currency_;
         result.price_ = price_;
         onBuilt();
@@ -1479,16 +1479,16 @@ public final class ExchangeRatesProto {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.stockservice.proto.ExchangeRatesProto.Rate) {
-          return mergeFrom((com.stockservice.proto.ExchangeRatesProto.Rate)other);
+        if (other instanceof ExchangeRatesProto.Rate) {
+          return mergeFrom((ExchangeRatesProto.Rate)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.stockservice.proto.ExchangeRatesProto.Rate other) {
-        if (other == com.stockservice.proto.ExchangeRatesProto.Rate.getDefaultInstance()) return this;
+      public Builder mergeFrom(ExchangeRatesProto.Rate other) {
+        if (other == ExchangeRatesProto.Rate.getDefaultInstance()) return this;
         if (!other.getCurrency().isEmpty()) {
           currency_ = other.currency_;
           onChanged();
@@ -1510,11 +1510,11 @@ public final class ExchangeRatesProto {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.stockservice.proto.ExchangeRatesProto.Rate parsedMessage = null;
+        ExchangeRatesProto.Rate parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.stockservice.proto.ExchangeRatesProto.Rate) e.getUnfinishedMessage();
+          parsedMessage = (ExchangeRatesProto.Rate) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1676,12 +1676,12 @@ public final class ExchangeRatesProto {
     }
 
     // @@protoc_insertion_point(class_scope:Rate)
-    private static final com.stockservice.proto.ExchangeRatesProto.Rate DEFAULT_INSTANCE;
+    private static final ExchangeRatesProto.Rate DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.stockservice.proto.ExchangeRatesProto.Rate();
+      DEFAULT_INSTANCE = new ExchangeRatesProto.Rate();
     }
 
-    public static com.stockservice.proto.ExchangeRatesProto.Rate getDefaultInstance() {
+    public static ExchangeRatesProto.Rate getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1704,7 +1704,7 @@ public final class ExchangeRatesProto {
       return PARSER;
     }
 
-    public com.stockservice.proto.ExchangeRatesProto.Rate getDefaultInstanceForType() {
+    public ExchangeRatesProto.Rate getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1732,9 +1732,8 @@ public final class ExchangeRatesProto {
       "\n\024exchange_rates.proto\"R\n\rExchangeRates\022" +
       "\031\n\021stockExchangeName\030\001 \001(\t\022\020\n\010currency\030\002" +
       " \001(\t\022\024\n\005rates\030\003 \003(\0132\005.Rate\"\'\n\004Rate\022\020\n\010cu" +
-      "rrency\030\001 \001(\t\022\r\n\005price\030\002 \001(\tB,\n\026com.stock" +
-      "service.protoB\022ExchangeRatesProtob\006proto" +
-      "3"
+      "rrency\030\001 \001(\t\022\r\n\005price\030\002 \001(\tB\024B\022ExchangeR" +
+      "atesProtob\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
